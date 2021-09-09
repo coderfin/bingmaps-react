@@ -49,7 +49,8 @@
     "build:test": "babel src/components",
     "build:demo": "rm -rf build && react-scripts build",
     "build:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files && cp README.md dist && cp package-npm.json dist/package.json",
-    "publish": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files && cp README.md dist && cp package-npm.json dist/package.json && cd dist && npm publish"
+    "publish": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files && cp README.md dist && cp package-npm.json dist/package.json && cd dist && npm publish",
+    "install": "npm run build:npm"
   },
   "babel": {
     "presets": [
